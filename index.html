@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spring Web | Homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              prompt: ["Prompt", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-[#F6DA6F] px-4 sm:px-8 md:px-16 lg:px-56">
+      <!-- Navigation -->
+      <div
+        class="flex flex-col md:flex-row justify-between items-center px-4 md:px-10 pt-5"
+      >
+        <img
+          src="./images/spring-logo.png"
+          alt="Logo"
+          class="w-15 h-4 cursor-pointer mb-4 md:mb-0"
+        />
+        <ul
+          class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 md:gap-8"
+        >
+          <li>
+            <a
+              href="#"
+              class="text-lg md:text-xl text-black hover:border-b-2 border-blue-400"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-md md:text-lg text-black hover:border-b-2 border-blue-400"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-md md:text-lg text-black hover:border-b-2 border-blue-400"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-md md:text-lg text-black hover:border-b-2 border-blue-400"
+              >Support</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-md md:text-lg text-black hover:border-b-2 border-blue-400"
+              >Contact</a
+            >
+          </li>
+          <button
+            class="border-2 text-sm md:text-md bg-black text-white border-black/70 rounded-3xl justify-center text-center px-4 py-1 hover:bg-transparent hover:text-black"
+          >
+            Get Started ->
+          </button>
+        </ul>
+      </div>
+
+      <!-- Hero Section -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4">
+        <div class="ml-4 md:ml-10 mt-8 md:mt-28 text-center lg:text-left">
+          <h1
+            class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl capitalize font-bold text-black font-prompt leading-snug"
+          >
+            We Build <br class="hidden sm:block" />
+            experiences <br class="hidden sm:block" />
+            for your clients
+          </h1>
+          <p
+            class="text-lg md:text-xl leading-tight text-black mt-3 mb-6 md:mb-20"
+          >
+            Revolver Template is a professional webflow
+            <br class="hidden sm:block" />
+            template with multifile sections that you can
+            <br class="hidden sm:block" />
+            fullly customize
+          </p>
+          <p class="text-lg md:text-xl text-black">quickrakilbull@gmail.com</p>
+          <div class="w-[300px] mt-3 h-px bg-black mx-auto lg:mx-0"></div>
+          <button
+            class="border-2 border-black/70 bg-black p-2 text-white mt-6 rounded-3xl mb-3 hover:text-black hover:bg-transparent px-5"
+          >
+            Get Free Trial
+          </button>
+        </div>
+        <div class="mt-8 md:mt-16 mb-8 md:mb-16">
+          <img
+            src="./images/hero-image.png"
+            class="w-full max-w-[600px] h-auto mx-auto"
+            alt="Hero Image"
+          />
+
+          <!-- Cards below hero -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+            <div class="pl-4 md:pl-[50px] text-center sm:text-left">
+              <img
+                src="./images/square.png"
+                alt="design image"
+                class="mt-4 md:mt-16 mx-auto sm:mx-0"
+              />
+              <p
+                class="text-3xl md:text-4xl font-bold mt-4 md:mt-6 mb-2 md:mb-6 font-prompt text-black"
+              >
+                Layout Design
+              </p>
+              <p class="text-lg md:text-xl font-prompt">
+                Curabitur auctor metus et cursus feugiat phasellus tempus nibh
+                non.
+              </p>
+              <a href="#" class="text-lg md:text-xl text-[#FF7A00]"
+                >Learn more</a
+              >
+            </div>
+            <div class="pl-4 md:pl-[50px] text-center sm:text-left">
+              <img
+                src="./images/triangle.png"
+                alt="design image"
+                class="mt-4 md:mt-16 mx-auto sm:mx-0"
+              />
+              <p
+                class="text-3xl md:text-4xl font-bold mt-4 md:mt-6 mb-2 md:mb-6 font-prompt text-black"
+              >
+                Graphic Design
+              </p>
+              <p class="text-lg md:text-xl font-prompt">
+                Curabitur auctor metus et cursus feugiat phasellus tempus nibh
+                non.
+              </p>
+              <a href="#" class="text-lg md:text-xl text-[#FF7A00]"
+                >Learn more</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Section 2: Welcome & Services -->
+    <section>
+      <div
+        class="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-4 px-4 sm:px-8 md:px-16 lg:px-56 mt-12 md:mt-20 mb-16 md:mb-36"
+      >
+        <div class="mt-8 md:mt-20 flex justify-center lg:justify-start">
+          <div class="w-[300px] h-[300px] bg-blue-300 rounded-xl">
+            <img
+              src="./images/handgesture-image.png"
+              alt="Image"
+              class="w-[380px] h-[300px] max-w-full"
+            />
+          </div>
+        </div>
+        <div>
+          <div class="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 md:gap-4">
+            <div class="mt-8 md:mt-32 text-center md:text-left">
+              <p class="text-3xl md:6xl font-prompt font-semibold mb-5">
+                Welcome
+              </p>
+              <p class="text-lg md:text-xl font-prompt mb-3">
+                We help you build <br class="hidden sm:block" />
+                something amazing
+              </p>
+              <button
+                class="border-2 text-sm md:text-md bg-black text-white border-black/50 rounded-3xl justify-center text-center px-4 py-1 hover:bg-transparent hover:text-black mt-4 md:mt-10"
+              >
+                Learn More
+              </button>
+            </div>
+            <div class="mt-8 md:mt-24 pr-4 md:pr-24">
+              <p
+                class="text-3xl md:6xl font-prompt font-semibold mb-5 text-center md:text-left"
+              >
+                We Provide This Services
+              </p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Column 1 -->
+                <div
+                  class="space-y-4 flex flex-col items-center sm:items-start"
+                >
+                  <div
+                    class="w-44 h-16 rounded-xl border-2 border-gray-200 p-1 px-6 hover:bg-[#F2CD3F] transition duration-300 hover:shadow-[0_15px_40px_rgba(212,175,55,0.35)]"
+                  >
+                    <p class="text-md font-prompt font-semibold md:text-lg">
+                      Layout Design
+                    </p>
+                    <p class="cursor-pointer">Learn More</p>
+                  </div>
+                  <div
+                    class="w-44 h-16 rounded-xl border-2 border-gray-200 p-1 px-6 hover:bg-[#F2CD3F] transition duration-300 hover:shadow-[0_15px_40px_rgba(212,175,55,0.35)]"
+                  >
+                    <p class="text-md font-prompt font-semibold md:text-lg">
+                      Layout Design
+                    </p>
+                    <p class="cursor-pointer">Learn More</p>
+                  </div>
+                </div>
+                <!-- Column 2 -->
+                <div
+                  class="space-y-4 flex flex-col items-center sm:items-start"
+                >
+                  <div
+                    class="w-44 h-16 rounded-xl border-2 border-gray-200 p-1 px-6 hover:bg-[#F2CD3F] transition duration-300 hover:shadow-[0_15px_40px_rgba(212,175,55,0.35)]"
+                  >
+                    <p class="text-md font-prompt font-semibold md:text-lg">
+                      Layout Design
+                    </p>
+                    <p class="cursor-pointer">Learn More</p>
+                  </div>
+                  <div
+                    class="w-44 h-16 rounded-xl border-2 border-gray-200 p-1 px-6 hover:bg-[#F2CD3F] transition duration-300 hover:shadow-[0_15px_40px_rgba(212,175,55,0.35)]"
+                  >
+                    <p class="text-md font-prompt font-semibold md:text-lg">
+                      Layout Design
+                    </p>
+                    <p class="cursor-pointer">Learn More</p>
+                  </div>
+                </div>
+                <!-- Column 3 -->
+                <div
+                  class="space-y-4 flex flex-col items-center sm:items-start"
+                >
+                  <div
+                    class="w-44 h-16 rounded-xl border-2 border-gray-200 p-1 px-6 hover:bg-[#F2CD3F] transition duration-300 hover:shadow-[0_15px_40px_rgba(212,175,55,0.35)]"
+                  >
+                    <p class="text-md font-prompt font-semibold md:text-lg">
+                      Layout Design
+                    </p>
+                    <p class="cursor-pointer">Learn More</p>
+                  </div>
+                  <div
+                    class="w-44 h-16 rounded-xl border-2 border-gray-200 p-1 px-6 hover:bg-[#F2CD3F] transition duration-300 hover:shadow-[0_15px_40px_rgba(212,175,55,0.35)]"
+                  >
+                    <p class="text-md font-prompt font-semibold md:text-lg">
+                      Layout Design
+                    </p>
+                    <p class="cursor-pointer">Learn More</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: More About Services -->
+    <section>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 sm:px-8 md:px-16 lg:px-56 mb-16 md:mb-32"
+      >
+        <div class="mt-8 md:mt-32 text-center md:text-left">
+          <p
+            class="text-3xl md:6xl font-prompt font-semibold mb-5 leading-normal"
+          >
+            More About Our Services <br class="hidden sm:block" />
+            With Transfer money
+          </p>
+          <p class="text-lg md:text-xl font-prompt leading-normal">
+            Product offer from services in that there's no
+            <br class="hidden sm:block" />
+            obilgation beyond the transaction digital products
+            <br class="hidden sm:block" />
+            should be to create more product and convince
+            <br class="hidden sm:block" />
+            your product.
+          </p>
+          <div class="inline-block mt-4 md:mt-10">
+            <button
+              class="border-2 text-sm md:text-md bg-black text-white border-black/50 rounded-3xl justify-center text-center px-4 py-1 hover:bg-transparent hover:text-black"
+            >
+              Get The App
+            </button>
+            <a href="#" class="text-sm text-[#FF7A00] ml-3 md:ml-5"
+              >How to work</a
+            >
+          </div>
+        </div>
+        <div class="flex justify-center md:justify-end">
+          <img
+            src="./images/phone-image.png"
+            alt="Phone display"
+            class="w-full max-w-[500px] h-auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Grid 2x2 -->
+    <section
+      class="grid grid-cols-1 md:grid-cols-2 min-h-screen bg-[#77B7E9]/10"
+    >
+      <!-- Row 1 -->
+      <div
+        class="border-b md:border-r border-[#8F815E] flex items-center justify-center p-4 order-1"
+      >
+        <img
+          src="./images/seating-man-image.png"
+          alt="Image 2"
+          class="max-w-full h-auto"
+        />
+      </div>
+      <div
+        class="border-b border-[#8F815E] flex items-center justify-center p-8 md:p-12 order-2"
+      >
+        <div class="text-center md:text-left">
+          <p
+            class="text-3xl md:6xl font-prompt font-semibold mb-5 leading-relaxed tracking-wider"
+          >
+            Not just your regular <br class="hidden sm:block" />
+            design agency
+          </p>
+          <p
+            class="text-md md:text-lg font-prompt leading-relaxed tracking-wider"
+          >
+            Quis ipsoum suspendises uitrices gravida rusus
+            <br class="hidden sm:block" />
+            commodo viverra maecenas accumsan. Quis
+            <br class="hidden sm:block" />
+            ipsoum suspendises uitrices gravida rusus
+            <br class="hidden sm:block" />
+            commodo viverra maecenas accumsan
+          </p>
+          <button
+            class="border-2 text-sm md:text-md bg-black text-white border-black/50 rounded-3xl justify-center text-center px-4 py-1 hover:bg-transparent hover:text-black mt-6 md:mt-10"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+      <!-- Row 2 -->
+      <div
+        class="md:border-r border-[#8F815E] flex items-center justify-center p-8 md:p-12 order-4 md:order-3"
+      >
+        <div class="text-center md:text-left">
+          <p
+            class="text-3xl md:6xl font-prompt font-semibold mb-5 leading-relaxed tracking-wider"
+          >
+            We design products that <br class="hidden sm:block" />
+            users love
+          </p>
+          <p
+            class="text-md md:text-lg font-prompt leading-relaxed tracking-wider"
+          >
+            Quis ipsoum suspendises uitrices gravida rusus
+            <br class="hidden sm:block" />
+            commodo viverra maecenas accumsan. Quis
+            <br class="hidden sm:block" />
+            ipsoum suspendises uitrices gravida rusus
+            <br class="hidden sm:block" />
+            commodo viverra maecenas accumsan
+          </p>
+          <button
+            class="border-2 text-sm md:text-md bg-black text-white border-black/50 rounded-3xl justify-center text-center px-4 py-1 hover:bg-transparent hover:text-black mt-6 md:mt-10"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+      <div class="flex items-center justify-center p-4 order-3 md:order-4">
+        <img
+          src="./images/standing-man-image.png"
+          alt="Image 3"
+          class="max-w-full h-auto"
+        />
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section>
+      <div
+        class="justify-center text-center px-4 sm:px-8 md:px-16 lg:px-56 mt-12 md:mt-20 mb-8 md:mb-16"
+      >
+        <p
+          class="text-3xl md:6xl font-prompt font-semibold mb-2 leading-relaxed tracking-wider"
+        >
+          Pricing
+        </p>
+        <p
+          class="text-md md:text-lg font-prompt leading-relaxed tracking-wider"
+        >
+          Pricing is the process whereby a business sets the price at which it
+          will sell its products <br class="hidden sm:block" />
+          and services, and may be part of the business's marketing plan.
+        </p>
+      </div>
+
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 gap-8 px-4 sm:px-8 md:px-16 lg:px-56 mb-12 md:mb-20"
+      >
+        <!-- Pricing Card 1 -->
+        <div class="flex justify-center">
+          <div class="w-full max-w-[520px] h-auto bg-[#77B7E9]/10 p-6 md:p-12">
+            <p
+              class="text-3xl md:6xl font-prompt font-semibold mb-2 leading-relaxed tracking-wider"
+            >
+              Basic
+            </p>
+            <p class="text-lg md:text-xl font-prompt mb-6 md:mb-10">
+              Start with a first step
+            </p>
+
+            <div class="flex flex-col md:flex-row gap-2 items-start">
+              <img
+                src="./images/tick.png"
+                alt="tick mark"
+                class="w-6 h-6 mt-1"
+              />
+              <div>
+                <p class="text-[#4197E0] text-lg md:text-xl mb-1">Prototype</p>
+                <p class="tracking-wider">
+                  A simple plan for simple needed. Use
+                  <br class="hidden sm:block" />
+                  one of our design to create a contract.
+                </p>
+                <div
+                  class="w-full max-w-[20rem] h-[2px] bg-gray-400 mt-3"
+                ></div>
+              </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-2 items-start mt-4">
+              <img
+                src="./images/tick.png"
+                alt="tick mark"
+                class="w-6 h-6 mt-1"
+              />
+              <div>
+                <p class="text-[#4197E0] text-lg md:text-xl mb-1">App Design</p>
+                <p class="tracking-wider">
+                  A simple plan for simple needed. Use
+                  <br class="hidden sm:block" />
+                  one of our design to create a contract.
+                </p>
+                <div
+                  class="w-full max-w-[20rem] h-[2px] bg-gray-400 mt-3"
+                ></div>
+              </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-2 items-start mt-4">
+              <img
+                src="./images/tick.png"
+                alt="tick mark"
+                class="w-6 h-6 mt-1"
+              />
+              <div>
+                <p class="text-[#4197E0] text-lg md:text-xl mb-1">Web Design</p>
+                <p class="tracking-wider">
+                  A simple plan for simple needed. Use
+                  <br class="hidden sm:block" />
+                  one of our design to create a contract.
+                </p>
+                <div
+                  class="w-full max-w-[20rem] h-[2px] bg-gray-400 mt-3"
+                ></div>
+              </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-2 items-start mt-4">
+              <img
+                src="./images/tick.png"
+                alt="tick mark"
+                class="w-6 h-6 mt-1"
+              />
+              <div>
+                <p class="text-[#4197E0] text-lg md:text-xl mb-1">
+                  Interaction
+                </p>
+                <p class="tracking-wider">
+                  A simple plan for simple needed. Use
+                  <br class="hidden sm:block" />
+                  one of our design to create a contract.
+                </p>
+                <div
+                  class="w-full max-w-[20rem] h-[2px] bg-gray-400 mt-3"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pricing Card 2 -->
+        <div class="flex justify-center">
+          <div class="w-full max-w-[520px] h-auto bg-[#77B7E9]/10 p-6 md:p-12">
+            <p
+              class="text-3xl md:6xl font-prompt font-semibold mb-2 leading-relaxed tracking-wider"
+            >
+              Basic
+            </p>
+            <p class="text-lg md:text-xl font-prompt mb-6 md:mb-10">
+              Start with a first step
+            </p>
+
+            <div class="flex flex-col md:flex-row gap-2 items-start">
+              <img
+                src="./images/tick.png"
+                alt="tick mark"
+                class="w-6 h-6 mt-1"
+              />
+              <div>
+                <p class="text-[#4197E0] text-lg md:text-xl mb-1">Prototype</p>
+                <p class="tracking-wider">
+                  A simple plan for simple needed. Use
+                  <br class="hidden sm:block" />
+                  one of our design to create a contract.
+                </p>
+                <div
+                  class="w-full max-w-[20rem] h-[2px] bg-gray-400 mt-3"
+                ></div>
+              </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-2 items-start mt-4">
+              <img
+                src="./images/tick.png"
+                alt="tick mark"
+                class="w-6 h-6 mt-1"
+              />
+              <div>
+                <p class="text-[#4197E0] text-lg md:text-xl mb-1">App Design</p>
+                <p class="tracking-wider">
+                  A simple plan for simple needed. Use
+                  <br class="hidden sm:block" />
+                  one of our design to create a contract.
+                </p>
+                <div
+                  class="w-full max-w-[20rem] h-[2px] bg-gray-400 mt-3"
+                ></div>
+              </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-2 items-start mt-4">
+              <img
+                src="./images/tick.png"
+                alt="tick mark"
+                class="w-6 h-6 mt-1"
+              />
+              <div>
+                <p class="text-[#4197E0] text-lg md:text-xl mb-1">Web Design</p>
+                <p class="tracking-wider">
+                  A simple plan for simple needed. Use
+                  <br class="hidden sm:block" />
+                  one of our design to create a contract.
+                </p>
+                <div
+                  class="w-full max-w-[20rem] h-[2px] bg-gray-400 mt-3"
+                ></div>
+              </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-2 items-start mt-4">
+              <img
+                src="./images/tick.png"
+                alt="tick mark"
+                class="w-6 h-6 mt-1"
+              />
+              <div>
+                <p class="text-[#4197E0] text-lg md:text-xl mb-1">
+                  Interaction
+                </p>
+                <p class="tracking-wider">
+                  A simple plan for simple needed. Use
+                  <br class="hidden sm:block" />
+                  one of our design to create a contract.
+                </p>
+                <div
+                  class="w-full max-w-[20rem] h-[2px] bg-gray-400 mt-3"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="bg-[#F6DA6F] px-4 sm:px-8 md:px-16 lg:px-56">
+      <div class="justify-center text-center pt-8 md:pt-12 pb-4 md:pb-8">
+        <p
+          class="text-3xl md:6xl font-prompt font-semibold mb-2 leading-relaxed tracking-wider"
+        >
+          FAQ
+        </p>
+        <p
+          class="text-md md:text-lg font-prompt leading-relaxed tracking-wider"
+        >
+          The purpose of a FAQ is generally to provide information on frequent
+          questions or <br class="hidden sm:block" />
+          concerns. however, the format is a useful means of organizing
+          information, and text
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24 pb-12">
+        <!-- Left Column -->
+        <div>
+          <div class="mb-4">
+            <p class="text-lg md:text-xl text-[#268940] mb-1">01</p>
+            <div class="flex flex-row justify-between">
+              <p class="font-prompt font-medium text-lg md:text-xl">
+                Can you design My website
+              </p>
+              <img
+                src="./images/circle-icon.png"
+                alt="Collapse Icon"
+                class="w-8 h-8"
+              />
+            </div>
+            <div class="w-full h-px bg-black mt-2"></div>
+          </div>
+
+          <div class="mb-4">
+            <p class="text-lg md:text-xl text-[#268940] mb-1">02</p>
+            <div class="flex flex-row justify-between">
+              <p class="font-prompt font-medium text-lg md:text-xl">
+                Can you design My website
+              </p>
+              <img
+                src="./images/circle-icon.png"
+                alt="Collapse Icon"
+                class="w-8 h-8"
+              />
+            </div>
+            <div class="w-full h-px bg-black mt-2"></div>
+          </div>
+
+          <div class="mb-4">
+            <p class="text-lg md:text-xl text-[#268940] mb-1">03</p>
+            <div class="flex flex-row justify-between">
+              <p class="font-prompt font-medium text-lg md:text-xl">
+                Can you design My website
+              </p>
+              <img
+                src="./images/circle-icon.png"
+                alt="Collapse Icon"
+                class="w-8 h-8"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div>
+          <div class="mb-4">
+            <p class="text-lg md:text-xl text-[#268940] mb-1">04</p>
+            <div class="flex flex-row justify-between">
+              <p class="font-prompt font-medium text-lg md:text-xl">
+                Can you design My website
+              </p>
+              <img
+                src="./images/circle-icon.png"
+                alt="Collapse Icon"
+                class="w-8 h-8"
+              />
+            </div>
+            <div class="w-full h-px bg-black mt-2"></div>
+          </div>
+
+          <div class="mb-4">
+            <p class="text-lg md:text-xl text-[#268940] mb-1">05</p>
+            <div class="flex flex-row justify-between">
+              <p class="font-prompt font-medium text-lg md:text-xl">
+                Can you design My website
+              </p>
+              <img
+                src="./images/circle-icon.png"
+                alt="Collapse Icon"
+                class="w-8 h-8"
+              />
+            </div>
+            <div class="w-full h-px bg-black mt-2"></div>
+          </div>
+
+          <div class="mb-4">
+            <p class="text-lg md:text-xl text-[#268940] mb-1">06</p>
+            <div class="flex flex-row justify-between">
+              <p class="font-prompt font-medium text-lg md:text-xl">
+                Can you design My website
+              </p>
+              <img
+                src="./images/circle-icon.png"
+                alt="Collapse Icon"
+                class="w-8 h-8"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer / CTA -->
+    <section>
+      <div
+        class="justify-center text-center px-4 sm:px-8 md:px-16 lg:px-56 mt-12 md:mt-20 mb-8 md:mb-16"
+      >
+        <p
+          class="text-3xl md:6xl font-prompt justify-center font-semibold mb-2 leading-relaxed tracking-wider"
+        >
+          Have a project in mind? <br class="hidden sm:block" />
+          Let's get to work
+        </p>
+        <button
+          class="border-2 text-sm md:text-md bg-black text-white border-black/50 rounded-3xl justify-center text-center px-4 py-1 hover:bg-transparent hover:text-black mt-4 md:mt-10"
+        >
+          Get The App
+        </button>
+      </div>
+
+      <div
+        class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12 px-4 sm:px-8 md:px-16 lg:px-56 mb-12 md:mb-20 text-center sm:text-left"
+      >
+        <div>
+          <p class="text-lg md:text-xl font-prompt font-semibold mb-2">
+            Products
+          </p>
+          <ul class="space-y-1">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Why Cequence</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-lg md:text-xl font-prompt font-semibold mb-2">
+            Solution
+          </p>
+          <ul class="space-y-1">
+            <li><a href="#">Procurement</a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Medium Businesses</a></li>
+            <li><a href="#">Enterprises</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-lg md:text-xl font-prompt font-semibold mb-2">
+            Company
+          </p>
+          <ul class="space-y-1">
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Case Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-lg md:text-xl font-prompt font-semibold mb-2">Links</p>
+          <ul class="space-y-1">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
